@@ -1,0 +1,19 @@
+nmap 0 ^
+
+" Map Ctrl-s to write the file
+nmap <C-s> :w<cr>
+
+" Edit your vimrc in a new tab
+nmap <leader>vi :tabedit ~/.vimrc<cr>
+
+" Source (reload) your vimrc. Type space, s, o in sequence to trigger
+nmap <leader>so :source $MYVIMRC<cr>
+
+imap jk <esc>
+imap kj <esc>
+imap <C-s> <esc>:w<cr>
+
+set number
+
+" Bind `q` to close the buffer for help files
+autocmd Filetype help nnoremap <buffer> q :q<CR>
